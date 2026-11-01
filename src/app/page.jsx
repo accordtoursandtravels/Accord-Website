@@ -338,26 +338,118 @@ export default function Home() {
       <CitiesSection />
 
       {/* ── WHY CHOOSE US & ACCORD ADD-ONS ── */}
-      <section id="why-choose-us" className="bg-slate-50 px-6 py-[clamp(4rem,7vw,6rem)]">
+      <section
+        id="why-choose-us"
+        className="bg-slate-50 px-6 py-[clamp(4rem,7vw,6rem)]"
+      >
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-12 max-w-3xl text-center">
-            <span className="mb-4 inline-block rounded bg-orange-50 px-3.5 py-[0.35rem] text-[0.72rem] font-bold tracking-[0.12em] text-orange-600 uppercase">The Accord Difference</span>
-            <h2 className="font-heading text-[clamp(1.75rem,3.5vw,2.4rem)] font-bold text-slate-800">Why Choose Us</h2>
-            <p className="mt-3 text-sm leading-7 text-slate-500">Thoughtful travel essentials, safety equipment and small comforts help make every journey with Accord more reassuring.</p>
+            <span className="mb-4 inline-block rounded bg-orange-50 px-3.5 py-[0.35rem] text-[0.72rem] font-bold tracking-[0.12em] text-orange-600 uppercase">
+              The Accord Difference
+            </span>
+            <h2 className="font-heading text-[clamp(1.75rem,3.5vw,2.4rem)] font-bold text-slate-800">
+              Why Choose Us
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-slate-500">
+              Thoughtful travel essentials, safety equipment and small comforts
+              help make every journey with Accord more reassuring.
+            </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
-              <div className="mb-5 flex items-center gap-3"><span className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-50 text-orange-600"><FaShieldAlt size={20}/></span><div><p className="text-xs font-bold uppercase tracking-wider text-orange-600">Travel with confidence</p><h3 className="font-heading text-xl font-bold text-slate-800">Safety features from Accord</h3></div></div>
-              <p className="mb-5 text-sm leading-6 text-slate-500">Vehicles will be equipped with:</p>
-              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">{[[FaTachometerAlt,"GPS tracking system"],[FaShieldAlt,"Fire extinguisher"],[FaPhone,"Mobile charger"],[FaCheckCircle,"Umbrella"],[FaCheckCircle,"Emergency hammer"]].map(([Icon,label])=><div key={label} className="flex items-center gap-3 rounded-lg bg-slate-50 px-3 py-3 text-sm text-slate-700"><Icon className="shrink-0 text-orange-600" size={15}/>{label}</div>)}</div>
+              <div className="mb-5 flex items-center gap-3">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-50 text-orange-600">
+                  <FaShieldAlt size={20} />
+                </span>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-orange-600">
+                    Travel with confidence
+                  </p>
+                  <h3 className="font-heading text-xl font-bold text-slate-800">
+                    Safety features from Accord
+                  </h3>
+                </div>
+              </div>
+              <p className="mb-5 text-sm leading-6 text-slate-500">
+                Vehicles will be equipped with:
+              </p>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {[
+                  [FaTachometerAlt, "GPS tracking system"],
+                  [FaShieldAlt, "Fire extinguisher"],
+                  [FaPhone, "Mobile charger"],
+                  [FaCheckCircle, "Umbrella"],
+                  [FaCheckCircle, "Emergency hammer"],
+                ].map(([Icon, label]) => (
+                  <div
+                    key={label}
+                    className="flex items-center gap-3 rounded-lg bg-slate-50 px-3 py-3 text-sm text-slate-700"
+                  >
+                    <Icon className="shrink-0 text-orange-600" size={15} />
+                    {label}
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
-              <div className="mb-5 flex items-center gap-3"><span className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-50 text-orange-600"><FaStar size={20}/></span><div><p className="text-xs font-bold uppercase tracking-wider text-orange-600">Little comforts, better journeys</p><h3 className="font-heading text-xl font-bold text-slate-800">Additional features from Accord</h3></div></div>
-              <ul className="grid grid-cols-1 gap-x-5 gap-y-3 sm:grid-cols-2">{["Drinking water bottle","Magazine","Mouth freshener","Tissue paper","Music on request","Perfume inside the car"].map((label)=><li key={label} className="flex items-start gap-2.5 text-sm leading-6 text-slate-600"><FaCheckCircle className="mt-1 shrink-0 text-orange-600" size={13}/><span>{label}</span></li>)}</ul>
-              <p className="mt-5 rounded-lg bg-orange-50 px-4 py-3 text-xs leading-5 text-orange-800">Availability of selected amenities depends on the trip. Please request any special requirements when booking.</p>
+              <div className="mb-5 flex items-center gap-3">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-50 text-orange-600">
+                  <FaStar size={20} />
+                </span>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-orange-600">
+                    Little comforts, better journeys
+                  </p>
+                  <h3 className="font-heading text-xl font-bold text-slate-800">
+                    Additional features from Accord
+                  </h3>
+                </div>
+              </div>
+              <ul className="grid grid-cols-1 gap-x-5 gap-y-3 sm:grid-cols-2">
+                {[
+                  "Drinking water bottle",
+                  "Magazine",
+                  "Mouth freshener",
+                  "Tissue paper",
+                  "Music on request",
+                  "Perfume inside the car",
+                ].map((label) => (
+                  <li
+                    key={label}
+                    className="flex items-start gap-2.5 text-sm leading-6 text-slate-600"
+                  >
+                    <FaCheckCircle
+                      className="mt-1 shrink-0 text-orange-600"
+                      size={13}
+                    />
+                    <span>{label}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-5 rounded-lg bg-orange-50 px-4 py-3 text-xs leading-5 text-orange-800">
+                Availability of selected amenities depends on the trip. Please
+                request any special requirements when booking.
+              </p>
             </div>
           </div>
-          <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">{[[FaCheckCircle,"Clear, upfront pricing"],[FaUsers,"Professional drivers"],[FaClock,"24×7 trip coordination"],[FaFileInvoice,"GST invoices"]].map(([Icon,label])=><div key={label} className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4"><Icon className="shrink-0 text-orange-600" size={17}/><span className="text-sm font-semibold text-slate-700">{label}</span></div>)}</div>
+          <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
+            {[
+              [FaCheckCircle, "Clear, upfront pricing"],
+              [FaUsers, "Professional drivers"],
+              [FaClock, "24×7 trip coordination"],
+              [FaFileInvoice, "GST invoices"],
+            ].map(([Icon, label]) => (
+              <div
+                key={label}
+                className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4"
+              >
+                <Icon className="shrink-0 text-orange-600" size={17} />
+                <span className="text-sm font-semibold text-slate-700">
+                  {label}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -491,15 +583,15 @@ export default function Home() {
                 {[
                   {
                     Icon: FaFacebookF,
-                    href: "https://facebook.com/accordtoursandtravels",
+                    href: "https://www.facebook.com/people/Accord-India-Tours-and-Travels/100063740596309/",
                   },
                   {
                     Icon: FaInstagram,
-                    href: "https://instagram.com/accordtoursandtravels",
+                    href: "https://www.instagram.com/accord_india/",
                   },
                   {
                     Icon: FaLinkedinIn,
-                    href: "https://linkedin.com/company/accordtoursandtravels",
+                    href: "https://www.linkedin.com/in/accord-india-tours-and-travels-b1b53b186/",
                   },
                   { Icon: FaWhatsapp, href: "https://wa.me/918123552002" },
                 ].map(({ Icon, href }) => (
