@@ -647,7 +647,7 @@ export default function Home() {
               {[
                 [FaMapMarkerAlt, "Bengaluru, Karnataka — 560001"],
                 [FaPhone, "+91 81235 52002"],
-                [FaEnvelope, "info@accordtoursandtravels.com"],
+                [FaEnvelope, "booking@accordtoursandtravels.com"],
                 [FaClock, "24×7 Available"],
               ].map(([Icon, text]) => (
                 <div
